@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<title>Error</title>
+<!--<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=lLqYYPwG4FR-vFZpUtlOwYD_mtFCCcu9BwE_6_JXBk-K4o7WNAMhiP1ua4NCM6g2rbdfRu267VnEOQaLD5SGRjYU2piCDd2J91ziWlbXZNYYKXNJVkKNbBAHTpFDYfof-x6dMqyo9IoTK8c7DFVMxtUNHDA2tKI60TFQ9gN5T3SLcSW-lNpM9vQonSNRzYlY0LUK8rfZ10TJ-qrbz3LGNNSVicss5KbMGuurq7rO9cJbMnOTBTvzEQfGyaqNvl3OhswGWvzdwpZFNtQ61znknp9QmPU6Z9twHPYaROKQGX8I_3GJOKqAh5R4s9IVz-knft4mC871W-rhzxXbvmuvjnSF-gcEdY-NATLTGAKXbkilR3m6b0H9hhw6JPy8TlA_2lhlJfsjYpaWO2_Wz27EqF1OII6f7RMECLF3SvhwOq9pe0AZh6i3Dv3BMSVOcyG9iplqGp34zJkJw97XafChNnC7RDBxZtqvmab9WNO-yu__dJk0MjVomgcmVZkfWf90XdK_TTwOHv4WLtXyW-2xpN8LOFfQ6fNn1PbpsrzFHMAU5cy3LVFnA_bCJZz-paPy8N-6Yo-fBZycAez8CyQS5aLHCax2doQsAOmxZAYbZ-T42svqOUydB_kb2Wj9LHbBMAX7TGCUK6hp3_6u7PNbiXUvWnxRdut5z4JFfwHZ2BvoLgJ9NMBrBCDo5XYlf3n7F1SkRy7mdGJcM5G0lXE5fpZ-xKhPCTf8p-h_VL1UZAk9swpssvxAF4uDNGEEYctpG7gZ6BF7sfBKgO2-7o1QOw" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9hdHQtYy51ZGVteWNkbi5jb20vMjAxOS0wOC0xMl8wMi00OC00NS1lNjExZjJiNDkwODFmMmEzYzQ3NjNiMDQyMjJiYmEzOC9vcmlnaW5hbC5odG1sP3Jlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249YXR0YWNobWVudCUzYiUyMGZpbGVuYW1lJTNkNDA0Lmh0bWwmRXhwaXJlcz0xNjc2NDYwMjM2JlNpZ25hdHVyZT1EUnZCTFFkODVQOHI0eWFjZkJyR1BrclNOdTZhWmJVOWltc1RnNE56VDFTNUpyYlNufmZaVjRlNWhoV0RKeVZEWnM4SVRVSGdlV35Yc1JRa3hEUE5YSFctd0dYemt-YXNvVmktcUg1WmpEVFR4dHpHWXZKaTVtS2VZSTJYWFVHbUJxZlRtM3hqMnk5a2lhRi0wT1VlNzNWTVVqc1RUVmhCUFU1cmFzWE5YRmhKRnR1eExxYzhlbFdwZC1KZH56VVg5Y3J-UlBPQXlhNFAtZXhmTUlYdkpYeGlyY0xQMEhadE5MVlRPbExLT2lGSEtoVkVGR2VIQjBnaEI3OEkxYUY5YVJiMHF-S1ZGblJwM2V-b0gwSEQ0aENqdXFYUFkzOUxyZ090MW8zQXlTMG1YdHBVUDM2NkI3TW42YzRiemkwTWNLTUNodUkwRVZHVmN0RHZhRjYwT1FfXyZLZXktUGFpci1JZD1BUEtBSVRKVjc3V1M1WlQ3MjYyQQ"/></head>-->
+<body>
+<h1 th:text="${status} + ' ' + ${error}">404 Not Found</h1>
+<p>The requested URL was not found on this server</p>
+
+<p><a th:href="@{/}">Back to index</a></p>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title th:text="${title}">Insert title here</title>
+<!--<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=JtFCtopSQJsfZbs3N1w8NRtlXikUk4Fp_gqRU-P5q1TftqJEIxbKLQVKvE8ATLQlgY-1lAbbhWY5jdPqKsPoMh7diwdv28cdSNQRLPNCj--hm9bpFnL-3bi0dZ4KedZ0ee4KRVMYtWskrJ8YR0_F-JwW_XrYf-8XN-AEetFHog53aOzy39IXefYvaUa7kLmYdjlfouvXOAMFF3ICfg_1kZHK6mnqTnIUjyB_IVuSxBQdjV_JjRA_laRiGP7d7uCp6kEUqZfzeIZdHYC03xPN3snlCXrJ9wgGWy1tobqKNfDyxjYVXVJqpSGfFDpymUp8JSI2otLz5xEkla-QHYl7ffKJT_wG6ni8_rHY21ErXujRQnStfGHSg3Oro95_58SybNt_Gg2amHS30eWzRmN_fO3BaCkEDLhJ_WLtMGYHiOJaOyefw1bSyJSqEPVBy82LxaOwPX-Zv_W7_i9RFp2qLlavytaudoSUzHNNztB1DTaG7esy_LC8_6Yvk_khR9aK96AGa6KUAKpNWpkKnThpyB0HCPbw2JhvfKrHGdMBmM1a8zDeWFkHZKxy5qtH_GhnfUNrdulfYu6WF7F0_sjYC2Qwuy-f2kHPJtWL-5hR-lgbUEevDb4uF4KYX1DfC7i37oEjvDbRNeYwY3hGEXlvYD4fyY8qcnnPDuMhYlWwmlgXfiFiRf6ir26OHM8EzGHaZFuK44jagMY5l4iX3Ii2NfrePFck-FsTnxnQqnRjK4tBsuRI9nPWP2ezjfeJ4C6no-XOphJECrSI5oTsyJ5mXA" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9hdHQtYy51ZGVteWNkbi5jb20vMjAxOS0wOS0yNV8wNy0xNC0yNS1jMjRmNDVjYzZlMWJmYTg4MTUyYmM3MWUzYjg0YjgwYy9vcmlnaW5hbC5odG1sP3Jlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249YXR0YWNobWVudCUzYiUyMGZpbGVuYW1lJTNkaW5kZXguaHRtbCZFeHBpcmVzPTE2NzY0NTU4ODcmU2lnbmF0dXJlPUdROW83MFVXWlJ6ZnZLTHlFMkFHaGxGcTd4amdmNkZZUm9XQWRZa3VTRFRCMDRSellZZDhKdmFYNmVabTBNYTRWZFp0NDJkVWtRS0xWQVQ0M2lFdDEwYlNzQ1U5NkFWOUpCLTIxMkMtREJGT0N-MzhWd0Z1eUd2bGVCdy04VzRiN1ZYUVY3c3U1b0d1b3FyU1N6SE1oUjd3WTlvTHgzQmUxUVVqM2t0VDBtNkxKTXpUQzM2cEZvMEpTQjc3YVphcm1BWFZiLW9rUjRwZGlBOEQ4MWdYYS1HVH5ucmd1WXRJWndGMTJtZ1FLSUlzZlg3TVRkfm9sQXM0OVp1LWRYd09LaGRKOFJOemtUZnV6UndNQVZIVGdTYzFnT0NlSkZhTUt1T2pyOXNQbHNUQklCbnBWRmtBaDB-akpRNS15aVZOd21vYmlBcWpYcWtkMkdjOFFmZ0o0UV9fJktleS1QYWlyLUlkPUFQS0FJVEpWNzdXUzVaVDcyNjJB"/></head>-->
+<body>
+<h1 th:text="${title}">title</h1>
+<table>
+	<tr>
+		<th>id</th><th>name</th><th>email</th><th>contents</th><th>datetime</th>
+	</tr>
+	<tr th:each="inquiry : ${inquiryList}">
+		<td th:text="${inquiry.id}">1</td>
+		<td th:text="${inquiry.name}"></td>
+		<td th:text="${inquiry.email}"></td>
+		<td th:text="${inquiry.contents}"></td>
+		<td th:text="${inquiry.created}"></td>
+	</tr>
+</table>
+</body>
+</html>
